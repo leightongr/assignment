@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8615441-5B62-4282-9D5F-613C2CA1B0C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChassisSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChassisSearch.Designer.cs">
+      <DependentUpon>ChassisSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Disclamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Disclamer.Designer.cs">
+      <DependentUpon>Disclamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DliscDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DliscDatabase.Designer.cs">
+      <DependentUpon>DliscDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLlogin.Designer.cs">
+      <DependentUpon>DLlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriversLiscCollectedRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriversLiscCollectedRecord.Designer.cs">
+      <DependentUpon>DriversLiscCollectedRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterNameTRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterNameTRN.Designer.cs">
+      <DependentUpon>EnterNameTRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstBody1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstBody1.Designer.cs">
+      <DependentUpon>FirstBody1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroScreenCustomer1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroScreenCustomer1.Designer.cs">
+      <DependentUpon>IntroScreenCustomer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroScreenCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroScreenCustomer.Designer.cs">
+      <DependentUpon>IntroScreenCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginScreen.Designer.cs">
+      <DependentUpon>loginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motorcarinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motorcarinfo.Designer.cs">
+      <DependentUpon>Motorcarinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Server.Designer.cs">
+      <DependentUpon>Server.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitleCollectedRecordSubmitInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitleCollectedRecordSubmitInfo.Designer.cs">
+      <DependentUpon>TitleCollectedRecordSubmitInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleDetailsLostFitnessandReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleDetailsLostFitnessandReg.Designer.cs">
+      <DependentUpon>VehicleDetailsLostFitnessandReg.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChassisSearch.resx">
+      <DependentUpon>ChassisSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disclamer.resx">
+      <DependentUpon>Disclamer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DliscDatabase.resx">
+      <DependentUpon>DliscDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLlogin.resx">
+      <DependentUpon>DLlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriversLiscCollectedRecord.resx">
+      <DependentUpon>DriversLiscCollectedRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterNameTRN.resx">
+      <DependentUpon>EnterNameTRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstBody1.resx">
+      <DependentUpon>FirstBody1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroScreenCustomer1.resx">
+      <DependentUpon>IntroScreenCustomer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroScreenCustomer.resx">
+      <DependentUpon>IntroScreenCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginScreen.resx">
+      <DependentUpon>loginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motorcarinfo.resx">
+      <DependentUpon>Motorcarinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Server.resx">
+      <DependentUpon>Server.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleCollectedRecordSubmitInfo.resx">
+      <DependentUpon>TitleCollectedRecordSubmitInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleDetailsLostFitnessandReg.resx">
+      <DependentUpon>VehicleDetailsLostFitnessandReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="loginDataSet.xsc">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="loginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>loginDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="loginDataSet.xss">
+      <DependentUpon>loginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Timer1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

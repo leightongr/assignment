@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="UserDataSet" targetNamespace="http://tempuri.org/UserDataSet.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/UserDataSet.xsd" xmlns:mstns="http://tempuri.org/UserDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"  xmlns:mscodegen="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="UserDataSet" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="User">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="1" msdata:Caption="Id" mscodegen:typedName="Id" />
+							<xs:element name="Username" type="xs:string" minOccurs="1" msdata:Caption="Username" mscodegen:typedName="Username" />
+							<xs:element name="Password" type="xs:string" minOccurs="1" msdata:Caption="Password" mscodegen:typedName="Password" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="UserDataSetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:User" />
+			<xs:field xpath="mstns:Id" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,15 @@
+Object Design
+
+User
+--Username
+--Password
+
+License
+--FirstName
+--LastName
+--TRN
+--Type (General,Private) - Combo
+--Laden
+--Unladen
+--CCRating
+--PhoneNumber

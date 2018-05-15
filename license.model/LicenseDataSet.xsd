@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="LicenseDataSet" targetNamespace="http://tempuri.org/LicenseDataSet.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/LicenseDataSet.xsd" xmlns:mstns="http://tempuri.org/LicenseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"  xmlns:mscodegen="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="LicenseDataSet" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="License">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="1" msdata:Caption="Id" mscodegen:typedName="Id" />
+							<xs:element name="FirstName" type="xs:string" minOccurs="1" msdata:Caption="First Name" mscodegen:typedName="FirstName" />
+							<xs:element name="LastName" type="xs:string" minOccurs="1" msdata:Caption="Last Name" mscodegen:typedName="LastName" />
+							<xs:element name="TRN" type="xs:string" minOccurs="1" msdata:Caption="TRN" mscodegen:typedName="TRN" />
+							<xs:element name="Type" type="xs:string" minOccurs="0" msdata:Caption="Type" mscodegen:typedName="Type" />
+							<xs:element name="PPV" type="xs:boolean" minOccurs="0" msdata:Caption="PPV" mscodegen:typedName="PPV" />
+							<xs:element name="Laden" type="xs:int" minOccurs="0" msdata:Caption="Laden" mscodegen:typedName="Laden" />
+							<xs:element name="PhoneNumber" type="xs:string" minOccurs="0" msdata:Caption="Phone Number" mscodegen:typedName="PhoneNumber" />
+							<xs:element name="Unladen" type="xs:int" minOccurs="0" msdata:Caption="Unladen" mscodegen:typedName="Unladen" />
+							<xs:element name="CCRating" type="xs:int" minOccurs="0" msdata:Caption="CCRating" mscodegen:typedName="CCRating" />
+							<xs:element name="Depot" type="xs:string" minOccurs="0" msdata:Caption="Depot" mscodegen:typedName="Depot" />
+							<xs:element name="DateCollected" type="xs:dateTime" minOccurs="0" msdata:Caption="Date Collected" mscodegen:typedName="DateCollected" />
+							<xs:element name="DateReceived" type="xs:dateTime" minOccurs="0" msdata:Caption="Date Received" mscodegen:typedName="DateReceived" />
+							<xs:element name="ExpireDate" type="xs:dateTime" minOccurs="0" msdata:Caption="Expire Date" mscodegen:typedName="ExpireDate" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="LicenseDataSetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:License" />
+			<xs:field xpath="mstns:Id" />
+		</xs:key>
+	</xs:element>
+</xs:schema>
